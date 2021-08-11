@@ -1,0 +1,11 @@
+Bootstrap: docker
+From: registry.access.redhat.com/ubi7/ubi:7.9
+
+
+%post
+    yum -y install tar
+    yum -y install wget
+    yum -y install bzip2
+    yum -y install git
+    mkdir /stamp_stamp
+
